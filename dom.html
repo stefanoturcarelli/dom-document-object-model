@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DOM (Document Object Model)</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="../assets/css/reset.css">
+	<link rel="stylesheet" href="../assets/css/custom-style-1.css">
+	<link rel="stylesheet" href="../DOM/dom.css">
+	<script src="./dom.js" defer></script>
+	<link rel="icon" type="image/x-icon" href="../assets/img/favicon.png">
+</head>
+
+<body>
+	<main>
+		<div class="container">
+
+			<h1>The Document Object Model (DOM)</h1>
+
+			<!-- ! DOM 1 -->
+			<h3>Welcome to JavaScript</h3>
+			<p>JavaScript is awesome!</p>
+
+			<!-- ! DOM 2 -->
+			<section id="section" class="section">
+				<h2 id="heading">The Document Object Model (DOM)</h2>
+
+				<!-- This is Obstrusive JavaScript. The code is added inside the HTML
+				element. This is not recommended.  -->
+				<!-- We are calling the function on the p with id 'one' -->
+				<p id="one" onclick="paintPurple();">Click me to make me purple</p>
+
+				<!-- See dom.js for the next methods -->
+				<p id="two">Click me to make me green</p>
+				<p id="three">Click me to make me orange</p>
+			</section>
+
+			<!-- ! DOM 3 -->
+			<section>
+				<!-- Hidden text -->
+				<h2 id="hidden-message">JavaScript is awesome!</h2>
+				<!-- Button makes the text appear -->
+				<button class="show-msg-btn btn">Show hidden message</button>
+				<button class="toggle-msg-btn btn">Toggle hidden message</button>
+			</section>
+			<section>
+				<!-- Paragraph that changes to red and back to white when clicked -->
+				<p id="red-white">Click me to make me red</p>
+			</section>
+
+			<!-- ! DOM 4 -->
+			<section>
+				<ul id="list">
+					<li>Clark Kent</li>
+					<li>Lois Lane</li>
+					<li>Lex Luthor</li>
+					<li>Bruce Wayne</li>
+				</ul>
+			</section>
+
+			<!-- ! DOM 5 -->
+			<!-- Let's create an element inside the empty section below -->
+			<article>
+				<h2>My new awesome article</h2>
+				<section id="empty-section">
+					<!-- Empty section -->
+				</section>
+			</article>
+
+			<!-- ! DOM 6 -->
+			<!-- Calculator -->
+			<section>
+				<div class="calculator">
+					<h2>Working with forms</h2>
+					<form name="calc">
+						<input type="text" class="number-one" placeholder="First number">
+						<input type="text" class="number-two" placeholder="Second number">
+						<input type="button" class="result" value="Result">
+					</form>
+					<section class="output">
+						<p></p>
+					</section>
+				</div>
+			</section>
+
+			<!-- ! DOM 7 -->
+			<section>
+				<h2>Events and event propagation</h2>
+				<!-- Create a new list -->
+				<ul id="new-list">
+					<li>Clark Kent</li>
+					<li>Bruce Wayne</li>
+					<li>Diana Prince</li>
+					<li>Barry Allen</li>
+				</ul>
+				<!-- Create a form with one input and an output that will mirror it -->
+				<section>
+					<form>
+						<input id="mirror-input" type="text" placeholder="Enter a name">
+					</form>
+				</section>
+				<section class="mirror-output">
+					<form>
+						<p></p>
+					</form>
+				</section>
+
+
+				<!-- ! DOM 2 -->
+				<button id="add"><i class="fas fa-plus"></i></button>
+				<button id="random"><i class="fas fa-palette"></i></button>
+		</div>
+	</main>
+
+	<noscript>
+		<p>This website needs a JavaScript browser</p>
+	</noscript>
+</body>
+
+</html>
